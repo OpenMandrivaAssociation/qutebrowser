@@ -8,9 +8,12 @@ URL:		http://www.qutebrowser.org
 Source0:	https://github.com/%{name}/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
+BuildRequires:	a2x
 BuildRequires:	asciidoc
 BuildRequires:	desktop-file-utils
-Requires:	python-setuptools
+BuildRequires:	python3dist(setuptools)
+
+Requires:	python3dist(setuptools)
 Requires:	python-qt5
 Requires:	python-qt5-webenginecore
 Requires:	python-qt5-webenginewidgets
