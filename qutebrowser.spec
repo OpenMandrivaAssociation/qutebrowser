@@ -83,7 +83,7 @@ find %{buildroot} -size 0 -delete
 %{python3_sitelib}/%{name}-%{version}-py?.?.egg-info
 %{python3_sitelib}/%{name}
 %{_bindir}/%{name}
-#{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.qutebrowser.qutebrowser.desktop
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/icons/hicolor/16x16/apps/%{name}.png
@@ -94,3 +94,4 @@ find %{buildroot} -size 0 -delete
 %{_datadir}/icons/hicolor/128x128/apps/%{name}.png
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 %{_datadir}/icons/hicolor/512x512/apps/%{name}.png
+%{_datadir}/metainfo/org.qutebrowser.qutebrowser.appdata.xml
