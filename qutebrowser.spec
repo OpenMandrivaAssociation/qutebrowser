@@ -45,11 +45,11 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 # install .desktop file
-desktop-file-install \
-	--add-category="Network" \
-	--delete-original \
-	--dir=%{buildroot}%{_datadir}/applications \
-	misc/%{name}.desktop
+#desktop-file-install \
+#	--add-category="Network" \
+#	--delete-original \
+#	--dir=%{buildroot}%{_datadir}/applications \
+#	misc/%{name}.desktop
 
 # Install man page
 install -Dm644 doc/%{name}.1 -t %{buildroot}%{_mandir}/man1
