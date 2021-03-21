@@ -15,9 +15,14 @@ BuildRequires:	python3dist(setuptools)
 
 Requires:	python3dist(setuptools)
 Requires:	python-qt5
-Requires:	python-qt5-webenginecore
-Requires:	python-qt5-webenginewidgets
-Suggests:	python-cssutils
+Requires:	qt5-qtwebengine
+Requires:	python3dist(pyqtwebengine)
+Requires:	python-qt5-webkit
+Requires:	qt5-qtwebkit
+Requires:	python3dist(jinja2)
+Requires:	python3dist(pyyaml)
+Recommends:	python3dist(pygments)
+Recommends:	python-cssutils
 
 
 %description
@@ -44,12 +49,16 @@ python setup.py build
 %install
 python setup.py install --root=%{buildroot}
 
-# install .desktop file
-#desktop-file-install \
-#	--add-category="Network" \
-#	--delete-original \
-#	--dir=%{buildroot}%{_datadir}/applications \
-#	misc/%{name}.desktop
+# Install desktop and appdata files
+	
+desktop-file-install \
+	--add-category="Network" \
+	--delete-original \
+	--dir=%{buildroot}%{_datadir}/applications \
+	misc/org.%{srcname}.%{srcname}.desktop
+	
+install -Dm644 misc/org.qutebrowser.qutebrowser.appdata.xml -t %{buildroot}%{_datadir}/metainfo
+	
 
 # Install man page
 install -Dm644 doc/%{name}.1 -t %{buildroot}%{_mandir}/man1
