@@ -70,11 +70,11 @@ chmod 755 %{buildroot}%{python3_sitelib}/%{name}/__main__.py
 find %{buildroot} -size 0 -delete
 
 %files
-%doc LICENSE README.asciidoc doc/changelog.asciidoc qutebrowser/html/doc
+#doc LICENSE README.asciidoc doc/changelog.asciidoc qutebrowser/html/doc
 %{python3_sitelib}/%{name}-%{version}-py?.?.egg-info
 %{python3_sitelib}/%{name}
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
+#{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/icons/hicolor/16x16/apps/%{name}.png
