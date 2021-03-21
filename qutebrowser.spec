@@ -55,7 +55,7 @@ desktop-file-install \
 	--add-category="Network" \
 	--delete-original \
 	--dir=%{buildroot}%{_datadir}/applications \
-	misc/org.%{srcname}.%{srcname}.desktop
+	misc/org.qutebrowser.qutebrowser.desktop
 	
 install -Dm644 misc/org.qutebrowser.qutebrowser.appdata.xml -t %{buildroot}%{_datadir}/metainfo
 	
