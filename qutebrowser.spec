@@ -1,11 +1,11 @@
 Name:		qutebrowser
-Version:	2.2.1
+Version:	2.2.3
 Release:	1
 Summary:	A keyboard-driven, vim-like browser based on PyQt5 and QtWebEngine
 
 License:	GPLv3
 URL:		http://www.qutebrowser.org
-Source0:	https://github.com/%{name}/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/qutebrowser/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	a2x
