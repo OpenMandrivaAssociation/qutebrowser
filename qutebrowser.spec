@@ -32,6 +32,10 @@ It was inspired by other browsers/addons like dwb and Vimperator/Pentadactyl.
 
 
 %prep
+# Workaround for error ub 2.2.3
+#tar: Pathname can't be converted from UTF-8 to current locale.
+#tar: Error exit delayed from previous errors.
+export LANG=en_US.UTF-8
 %setup -qn %{name}-%{version}
 
 
