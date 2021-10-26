@@ -1,5 +1,5 @@
 Name:		qutebrowser
-Version:	2.3.1
+Version:	2.4.0
 Release:	1
 Summary:	A keyboard-driven, vim-like browser based on PyQt5 and QtWebEngine
 
