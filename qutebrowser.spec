@@ -84,7 +84,7 @@ find %{buildroot} -size 0 -delete
 
 %files
 #doc LICENSE README.asciidoc doc/changelog.asciidoc qutebrowser/html/doc
-%{python3_sitelib}/%{name}-%{version}-py?.?.egg-info
+%{python3_sitelib}/%{name}-%{version}-py*.*.egg-info
 %{python3_sitelib}/%{name}
 %{_bindir}/%{name}
 %{_datadir}/applications/org.qutebrowser.qutebrowser.desktop
