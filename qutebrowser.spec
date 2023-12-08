@@ -1,5 +1,5 @@
 Name:		qutebrowser
-Version:	3.0.2
+Version:	3.1.0
 Release:	1
 Summary:	A keyboard-driven, vim-like browser based on PyQt5 and QtWebEngine
 Group:		Internet/Web browser
@@ -12,12 +12,15 @@ BuildRequires:	a2x
 BuildRequires:	asciidoc
 BuildRequires:	desktop-file-utils
 BuildRequires:	python3dist(setuptools)
+BuildRequires:	python3dist(pyqt6-sip)
+BuildRequires:	python3dist(pyqt6-webengine)
+BuildRequires:	qt6-qtbase-sql-sqlite
 
 Requires:	python3dist(setuptools)
-Requires:	python-qt5
-Requires:	qt5-qtwebengine
-Requires:	python3dist(pyqtwebengine)
-Requires:	python-qt5-webkit
+Requires:	python-qt6
+Requires:	qt6-qtwebengine
+Requires:	python3dist(pyqt6-webengine)
+#Requires:	python-qt5-webkit
 Requires:	qt5-qtwebkit
 Requires:	python3dist(jinja2)
 Requires:	python3dist(pyyaml)
