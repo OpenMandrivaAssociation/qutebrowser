@@ -23,7 +23,7 @@ Requires:	python-qt6
 Requires:	qt6-qtwebengine
 Requires:	python3dist(pyqt6-webengine)
 #Requires:	python-qt5-webkit
-Requires:	qt5-qtwebkit
+#Requires:	qt5-qtwebkit
 Requires:	python3dist(jinja2)
 Requires:	python3dist(pyyaml)
 Recommends:	python3dist(pygments)
