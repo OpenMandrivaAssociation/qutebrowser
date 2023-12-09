@@ -16,6 +16,8 @@ BuildRequires:	python3dist(pyqt6-sip)
 BuildRequires:	python3dist(pyqt6-webengine)
 BuildRequires:	qt6-qtbase-sql-sqlite
 
+Requires:	%{_lib}Qt6Sql
+Requires:	qt6-qtbase-sql-sqlite
 Requires:	python3dist(setuptools)
 Requires:	python-qt6
 Requires:	qt6-qtwebengine
@@ -71,7 +73,7 @@ install -Dm644 misc/org.qutebrowser.qutebrowser.appdata.xml -t %{buildroot}%{_da
 install -Dm644 doc/%{name}.1 -t %{buildroot}%{_mandir}/man1
 
 # Install icons
-#install -Dm644 icons/qutebrowser.svg \
+install -Dm644 qutebrowser/icons/qutebrowser.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 #	-t "%{buildroot}%{_datadir}/icons/hicolor/scalable/apps"
 #for i in 16 24 32 48 64 128 256 512; do
 #	install -Dm644 "icons/qutebrowser-${i}x${i}.png" \
@@ -92,7 +94,7 @@ find %{buildroot} -size 0 -delete
 %{_bindir}/%{name}
 %{_datadir}/applications/org.qutebrowser.qutebrowser.desktop
 %{_mandir}/man1/%{name}.1*
-#{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 #{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 #{_datadir}/icons/hicolor/24x24/apps/%{name}.png
 #{_datadir}/icons/hicolor/32x32/apps/%{name}.png
