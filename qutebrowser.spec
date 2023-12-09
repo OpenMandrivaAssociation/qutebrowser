@@ -73,7 +73,7 @@ install -Dm644 misc/org.qutebrowser.qutebrowser.appdata.xml -t %{buildroot}%{_da
 install -Dm644 doc/%{name}.1 -t %{buildroot}%{_mandir}/man1
 
 # Install icons
-install -Dm644 qutebrowser/icons/qutebrowser.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+install -Dm644 qutebrowser/icons/qutebrowser.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/qutebrowser.svg
 #	-t "%{buildroot}%{_datadir}/icons/hicolor/scalable/apps"
 #for i in 16 24 32 48 64 128 256 512; do
 #	install -Dm644 "icons/qutebrowser-${i}x${i}.png" \
