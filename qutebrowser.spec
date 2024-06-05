@@ -1,10 +1,10 @@
 Name:		qutebrowser
-Version:	3.1.0
+Version:	3.2.0
 Release:	1
 Summary:	A keyboard-driven, vim-like browser based on PyQt5 and QtWebEngine
 Group:		Internet/Web browser
 License:	GPLv3
-URL:		http://www.qutebrowser.org
+URL:		https://www.qutebrowser.org
 Source0:	https://github.com/qutebrowser/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
