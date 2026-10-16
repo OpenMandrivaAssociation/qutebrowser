@@ -11,22 +11,22 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	a2x
 BuildRequires:	asciidoc
 BuildRequires:	desktop-file-utils
-BuildRequires:	python3dist(setuptools)
-BuildRequires:	python3dist(pyqt6-sip)
-BuildRequires:	python3dist(pyqt6-webengine)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(pyqt6-sip)
+BuildRequires:	python%{pyver}dist(pyqt6-webengine)
 BuildRequires:	qt6-qtbase-sql-sqlite
 
 Requires:	%{_lib}Qt6Sql
 Requires:	qt6-qtbase-sql-sqlite
-Requires:	python3dist(setuptools)
+Requires:	python%{pyver}dist(setuptools)
 Requires:	python-qt6
 Requires:	qt6-qtwebengine
-Requires:	python3dist(pyqt6-webengine)
+Requires:	python%{pyver}dist(pyqt6-webengine)
 #Requires:	python-qt5-webkit
 #Requires:	qt5-qtwebkit
-Requires:	python3dist(jinja2)
-Requires:	python3dist(pyyaml)
-Recommends:	python3dist(pygments)
+Requires:	python%{pyver}dist(jinja2)
+Requires:	python%{pyver}dist(pyyaml)
+Recommends:	python%{pyver}dist(pygments)
 Recommends:	python-cssutils
 
 
