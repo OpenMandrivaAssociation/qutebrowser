@@ -1,6 +1,6 @@
 Name:		qutebrowser
 Version:	3.7.0
-Release:	1
+Release:	2
 Summary:	A keyboard-driven, vim-like browser based on PyQt5 and QtWebEngine
 Group:		Internet/Web browser
 License:	GPLv3
